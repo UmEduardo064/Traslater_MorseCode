@@ -16,7 +16,7 @@ public class Encrypt {
             char caracter = phrasef.charAt(i);
 
             encryptMet.encrytpmethod(caracter);
-        }
+        }.
 
         System.out.println(encryptMet.code);
     }

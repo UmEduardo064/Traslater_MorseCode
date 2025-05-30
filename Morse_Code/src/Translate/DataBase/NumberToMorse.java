@@ -1,6 +1,6 @@
 package Translate.DataBase;
 
-public class NumberToMorse {
+public class NumberToMorse {.
     public String getZero() {
         return "----- ";
     }

@@ -1,7 +1,7 @@
 import java.util.Scanner;
 import Translate.Encrypt;
 
-public class Main {
+public class Main {.
     private static String phrase;
 
     public static void main(String[] args) {

@@ -105,7 +105,7 @@ public class EncryptMethod {
                     break;
                 case '1':
                     code.add(nm.getOne());
-                    break;
+                    break;.
                 case '2':
                     code.add(nm.getTwo());
                     break;

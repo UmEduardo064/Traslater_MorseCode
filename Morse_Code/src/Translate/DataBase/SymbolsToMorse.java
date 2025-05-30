@@ -1,6 +1,6 @@
 package Translate.DataBase;
 
-public class SymbolsToMorse {
+public class SymbolsToMorse {.
     public String getPeriod() {
         return "..---";
     }
