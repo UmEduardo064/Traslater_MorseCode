@@ -3,144 +3,625 @@ package Translate.Method;
 import Translate.DataBase.WordToMorse;
 import Translate.DataBase.NumberToMorse;
 import Translate.DataBase.SymbolsToMorse;
+
 import java.util.ArrayList;
 
 public class EncryptMethod {
-    public static class encrytpMethod {
+    public static class encryptMethod {
 
         public ArrayList<String> code;
 
-        public encrytpMethod(){
+        public encryptMethod(){
             this.code = new ArrayList<>();
 
         }
 
-        public void encrytpmethod(char caracter) {
+        public void encryptmethod(char caracter) {
 
+            StringBuilder sb = new StringBuilder();
             WordToMorse wm = new WordToMorse();
             NumberToMorse nm = new NumberToMorse();
             SymbolsToMorse sm = new SymbolsToMorse();
 
-            switch (caracter) {
+            switch (caracter){
+                case ' ':
+                    if (sb.isEmpty()) {
+                        sb.append(" / ");
+                    } else {
+                        int position = 0;
+                        while (position < sb.length()){
+                            position++;
+                        }
+
+                        sb.insert(position, " / ");
+                    }
+
+                    code.add(sb.toString());
+                    break;
+
                 case 'a':
-                    code.add(wm.getA());
+                    if (sb.isEmpty()) {
+                        sb.append(wm.getA());
+                    }else {
+                    int position = 0;
+                    while (position < sb.length()){
+                        position++;
+                    }
+
+                    sb.insert(position, wm.getA());
+                    }
+
+                    code.add(sb.toString());
                     break;
+
                 case 'b':
-                    code.add(wm.getB());
+                    if (sb.isEmpty()) {
+                        sb.append(wm.getB());
+                    }else {
+                        int position = 0;
+                        while (position < sb.length()){
+                            position++;
+                        }
+
+                        sb.insert(position, wm.getB());
+                    }
+
+                    code.add(sb.toString());
                     break;
+
                 case 'c':
-                    code.add(wm.getC());
+                    if (sb.isEmpty()) {
+                        sb.append(wm.getC());
+                    }else {
+                        int position = 0;
+                        while (position < sb.length()){
+                            position++;
+                        }
+
+                        sb.insert(position, wm.getC());
+                    }
+
+                    code.add(sb.toString());
                     break;
+
                 case 'd':
-                    code.add(wm.getD());
+                    if (sb.isEmpty()) {
+                        sb.append(wm.getD());
+                    }else {
+                        int position = 0;
+                        while (position < sb.length()){
+                            position++;
+                        }
+
+                        sb.insert(position, wm.getD());
+                    }
+
+                    code.add(sb.toString());
                     break;
+
                 case 'e':
-                    code.add(wm.getE());
+                    if (sb.isEmpty()) {
+                        sb.append(wm.getE());
+                    }else {
+                        int position = 0;
+                        while (position < sb.length()){
+                            position++;
+                        }
+
+                        sb.insert(position, wm.getE());
+                    }
+
+                    code.add(sb.toString());
                     break;
+
                 case 'f':
-                    code.add(wm.getF());
+                    if (sb.isEmpty()) {
+                        sb.append(wm.getF());
+                    }else {
+                        int position = 0;
+                        while (position < sb.length()){
+                            position++;
+                        }
+
+                        sb.insert(position, wm.getF());
+                    }
+
+                    code.add(sb.toString());
                     break;
+
                 case 'g':
-                    code.add(wm.getG());
+                    if (sb.isEmpty()) {
+                        sb.append(wm.getG());
+                    }else {
+                        int position = 0;
+                        while (position < sb.length()){
+                            position++;
+                        }
+
+                        sb.insert(position, wm.getG());
+                    }
+
+                    code.add(sb.toString());
                     break;
+
                 case 'h':
-                    code.add(wm.getH());
+                    if (sb.isEmpty()) {
+                        sb.append(wm.getH());
+                    }else {
+                        int position = 0;
+                        while (position < sb.length()){
+                            position++;
+                        }
+
+                        sb.insert(position, wm.getH());
+                    }
+
+                    code.add(sb.toString());
                     break;
+
                 case 'i':
-                    code.add(wm.getI());
+                    if (sb.isEmpty()) {
+                        sb.append(wm.getI());
+                    }else {
+                        int position = 0;
+                        while (position < sb.length()){
+                            position++;
+                        }
+
+                        sb.insert(position, wm.getI());
+                    }
+
+                    code.add(sb.toString());
                     break;
+
                 case 'j':
-                    code.add(wm.getJ());
+                    if (sb.isEmpty()) {
+                        sb.append(wm.getJ());
+                    }else {
+                        int position = 0;
+                        while (position < sb.length()){
+                            position++;
+                        }
+
+                        sb.insert(position, wm.getJ());
+                    }
+
+                    code.add(sb.toString());
                     break;
+
                 case 'k':
-                    code.add(wm.getK());
+                    if (sb.isEmpty()) {
+                        sb.append(wm.getK());
+                    }else {
+                        int position = 0;
+                        while (position < sb.length()){
+                            position++;
+                        }
+
+                        sb.insert(position, wm.getK());
+                    }
+
+                    code.add(sb.toString());
                     break;
+
                 case 'l':
-                    code.add(wm.getL());
+                    if (sb.isEmpty()) {
+                        sb.append(wm.getL());
+                    }else {
+                        int position = 0;
+                        while (position < sb.length()){
+                            position++;
+                        }
+
+                        sb.insert(position, wm.getL());
+                    }
+
+                    code.add(sb.toString());
                     break;
+
                 case 'm':
-                    code.add(wm.getM());
+                    if (sb.isEmpty()) {
+                        sb.append(wm.getM());
+                    }else {
+                        int position = 0;
+                        while (position < sb.length()){
+                            position++;
+                        }
+
+                        sb.insert(position, wm.getM());
+                    }
+
+                    code.add(sb.toString());
                     break;
+
                 case 'n':
-                    code.add(wm.getN());
+                    if (sb.isEmpty()) {
+                        sb.append(wm.getN());
+                    }else {
+                        int position = 0;
+                        while (position < sb.length()){
+                            position++;
+                        }
+
+                        sb.insert(position, wm.getN());
+                    }
+
+                    code.add(sb.toString());
                     break;
+
                 case 'o':
-                    code.add(wm.getO());
+                    if (sb.isEmpty()) {
+                        sb.append(wm.getO());
+                    }else {
+                        int position = 0;
+                        while (position < sb.length()){
+                            position++;
+                        }
+
+                        sb.insert(position, wm.getO());
+                    }
+
+                    code.add(sb.toString());
                     break;
+
                 case 'p':
-                    code.add(wm.getP());
+                    if (sb.isEmpty()) {
+                        sb.append(wm.getP());
+                    }else {
+                        int position = 0;
+                        while (position < sb.length()){
+                            position++;
+                        }
+
+                        sb.insert(position, wm.getP());
+                    }
+
+                    code.add(sb.toString());
                     break;
+
                 case 'q':
-                    code.add(wm.getQ());
+                    if (sb.isEmpty()) {
+                        sb.append(wm.getQ());
+                    }else {
+                        int position = 0;
+                        while (position < sb.length()){
+                            position++;
+                        }
+
+                        sb.insert(position, wm.getQ());
+                    }
+
+                    code.add(sb.toString());
                     break;
+
                 case 'r':
-                    code.add(wm.getR());
+                    if (sb.isEmpty()) {
+                        sb.append(wm.getR());
+                    }else {
+                        int position = 0;
+                        while (position < sb.length()){
+                            position++;
+                        }
+
+                        sb.insert(position, wm.getR());
+                    }
+
+                    code.add(sb.toString());
                     break;
                 case 's':
-                    code.add(wm.getS());
+                    if (sb.isEmpty()) {
+                        sb.append(wm.getS());
+                    }else {
+                        int position = 0;
+                        while (position < sb.length()){
+                            position++;
+                        }
+
+                        sb.insert(position, wm.getS());
+                    }
+
+                    code.add(sb.toString());
                     break;
+
                 case 't':
-                    code.add(wm.getT());
+                    if (sb.isEmpty()) {
+                        sb.append(wm.getT());
+                    }else {
+                        int position = 0;
+                        while (position < sb.length()){
+                            position++;
+                        }
+
+                        sb.insert(position, wm.getT());
+                    }
+
+                    code.add(sb.toString());
                     break;
+
                 case 'u':
-                    code.add(wm.getU());
+                    if (sb.isEmpty()) {
+                        sb.append(wm.getU());
+                    }else {
+                        int position = 0;
+                        while (position < sb.length()){
+                            position++;
+                        }
+
+                        sb.insert(position, wm.getU());
+                    }
+
+                    code.add(sb.toString());
                     break;
+
                 case 'v':
-                    code.add(wm.getV());
+                    if (sb.isEmpty()) {
+                        sb.append(wm.getV());
+                    }else {
+                        int position = 0;
+                        while (position < sb.length()){
+                            position++;
+                        }
+
+                        sb.insert(position, wm.getV());
+                    }
+
+                    code.add(sb.toString());
                     break;
+
                 case 'w':
-                    code.add(wm.getW());
+                    if (sb.isEmpty()) {
+                        sb.append(wm.getW());
+                    }else {
+                        int position = 0;
+                        while (position < sb.length()){
+                            position++;
+                        }
+
+                        sb.insert(position, wm.getW());
+                    }
+
+                    code.add(sb.toString());
                     break;
+
                 case 'x':
-                    code.add(wm.getX());
+                    if (sb.isEmpty()) {
+                        sb.append(wm.getX());
+                    }else {
+                        int position = 0;
+                        while (position < sb.length()){
+                            position++;
+                        }
+
+                        sb.insert(position, wm.getX());
+                    }
+
+                    code.add(sb.toString());
                     break;
+
                 case 'y':
-                    code.add(wm.getY());
+                    if (sb.isEmpty()) {
+                        sb.append(wm.getY());
+                    }else {
+                        int position = 0;
+                        while (position < sb.length()){
+                            position++;
+                        }
+
+                        sb.insert(position, wm.getY());
+                    }
+
+                    code.add(sb.toString());
                     break;
+
                 case 'z':
-                    code.add(wm.getZ());
+                    if (sb.isEmpty()) {
+                        sb.append(wm.getZ());
+                    }else {
+                        int position = 0;
+                        while (position < sb.length()){
+                            position++;
+                        }
+
+                        sb.insert(position, wm.getZ());
+                    }
+
+                    code.add(sb.toString());
                     break;
+
                 case '0':
-                    code.add(nm.getZero());
+                    if (sb.isEmpty()) {
+                        sb.append(nm.getZero());
+                    }else {
+                        int position = 0;
+                        while (position < sb.length()){
+                            position++;
+                        }
+
+                        sb.insert(position, nm.getZero());
+                    }
+
+                    code.add(sb.toString());
                     break;
+
                 case '1':
-                    code.add(nm.getOne());
-                    break;.
+                    if (sb.isEmpty()) {
+                        sb.append(nm.getOne());
+                    }else {
+                        int position = 0;
+                        while (position < sb.length()){
+                            position++;
+                        }
+
+                        sb.insert(position, nm.getOne());
+                    }
+
+                    code.add(sb.toString());
+                    break;
+
                 case '2':
-                    code.add(nm.getTwo());
+                    if (sb.isEmpty()) {
+                        sb.append(nm.getTwo());
+                    }else {
+                        int position = 0;
+                        while (position < sb.length()){
+                            position++;
+                        }
+
+                        sb.insert(position, nm.getTwo());
+                    }
+
+                    code.add(sb.toString());
                     break;
+
                 case '3':
-                    code.add(nm.getThree());
+                    if (sb.isEmpty()) {
+                        sb.append(nm.getThree());
+                    }else {
+                        int position = 0;
+                        while (position < sb.length()){
+                            position++;
+                        }
+
+                        sb.insert(position, nm.getThree());
+                    }
+
+                    code.add(sb.toString());
                     break;
+
                 case '4':
-                    code.add(nm.getFour());
+                    if (sb.isEmpty()) {
+                        sb.append(nm.getFour());
+                    }else {
+                        int position = 0;
+                        while (position < sb.length()){
+                            position++;
+                        }
+
+                        sb.insert(position, nm.getFour());
+                    }
+
+                    code.add(sb.toString());
                     break;
+
                 case '5':
-                    code.add(nm.getFive());
+                    if (sb.isEmpty()) {
+                        sb.append(nm.getFive());
+                    }else {
+                        int position = 0;
+                        while (position < sb.length()){
+                            position++;
+                        }
+
+                        sb.insert(position, nm.getFive());
+                    }
+
+                    code.add(sb.toString());
                     break;
+
                 case '6':
-                    code.add(nm.getSix());
+                    if (sb.isEmpty()) {
+                        sb.append(nm.getSix());
+                    }else {
+                        int position = 0;
+                        while (position < sb.length()){
+                            position++;
+                        }
+
+                        sb.insert(position, nm.getSix());
+                    }
+
+                    code.add(sb.toString());
                     break;
+
                 case '7':
-                    code.add(nm.getSeven());
+                    if (sb.isEmpty()) {
+                        sb.append(nm.getSeven());
+                    }else {
+                        int position = 0;
+                        while (position < sb.length()){
+                            position++;
+                        }
+
+                        sb.insert(position, nm.getSeven());
+                    }
+
+                    code.add(sb.toString());
                     break;
+
                 case '8':
-                    code.add(nm.getEight());
+                    if (sb.isEmpty()) {
+                        sb.append(nm.getEight());
+                    }else {
+                        int position = 0;
+                        while (position < sb.length()){
+                            position++;
+                        }
+
+                        sb.insert(position, nm.getEight());
+                    }
+
+                    code.add(sb.toString());
                     break;
+
                 case '9':
-                    code.add(nm.getNine());
+                    if (sb.isEmpty()) {
+                        sb.append(nm.getNine());
+                    }else {
+                        int position = 0;
+                        while (position < sb.length()){
+                            position++;
+                        }
+
+                        sb.insert(position, nm.getNine());
+                    }
+
+                    code.add(sb.toString());
                     break;
+
                 case '.':
-                    code.add(sm.getPeriod());
+                    if (sb.isEmpty()) {
+                        sb.append(sm.getPeriod());
+                    }else {
+                        int position = 0;
+                        while (position < sb.length()){
+                            position++;
+                        }
+
+                        sb.insert(position, sm.getPeriod());
+                    }
+
+                    code.add(sb.toString());
                     break;
+
                 case ',':
-                    code.add(sm.getComma());
+                    if (sb.isEmpty()) {
+                        sb.append(sm.getComma());
+                    }else {
+                        int position = 0;
+                        while (position < sb.length()){
+                            position++;
+                        }
+
+                        sb.insert(position, sm.getComma());
+                    }
+
+                    code.add(sb.toString());
                     break;
+
                 case '?':
-                    code.add(sm.getQuestionMark());
+                    if (sb.isEmpty()) {
+                        sb.append(sm.getQuestionMark());
+                    }else {
+                        int position = 0;
+                        while (position < sb.length()){
+                            position++;
+                        }
+
+                        sb.insert(position, sm.getQuestionMark());
+                    }
+
+                    code.add(sb.toString());
                     break;
-                default:
-                    System.out.println("Error");
             }
         }
     }

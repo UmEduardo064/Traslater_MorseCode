@@ -1,7 +1,7 @@
 package Translate.DataBase;
 
 public class WordToMorse {
-    .
+
     public String getA() {
         return ".- ";
     }

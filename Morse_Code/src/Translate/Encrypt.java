@@ -6,19 +6,16 @@ public class Encrypt {
 
     public void encrypt(String phrase) {
 
-        EncryptMethod.encrytpMethod encryptMet = new EncryptMethod.encrytpMethod();
+        EncryptMethod.encryptMethod encryptMet = new EncryptMethod.encryptMethod();
 
         phrase = phrase.toLowerCase();
 
-        String phrasef = phrase.replaceAll("\\s", "");
+        for (int i = 0; i < phrase.length() ; i++) {
+            char caracter = phrase.charAt(i);
 
-        for (int i = 0; i < phrasef.length() ; i++) {
-            char caracter = phrasef.charAt(i);
-
-            encryptMet.encrytpmethod(caracter);
-        }.
+            encryptMet.encryptmethod(caracter);
+        }
 
         System.out.println(encryptMet.code);
     }
 }
-
