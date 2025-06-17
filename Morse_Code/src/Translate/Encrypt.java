@@ -16,6 +16,6 @@ public class Encrypt {
             encryptMet.encryptmethod(caracter);
         }
 
-        System.out.println(encryptMet.code);
+        /*System.out.println(encryptMet);*/
     }
 }
