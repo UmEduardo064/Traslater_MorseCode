@@ -1,8 +1,6 @@
 package Translate.Method;
 
-import Translate.DataBase.WordToMorse;
-import Translate.DataBase.NumberToMorse;
-import Translate.DataBase.SymbolsToMorse;
+import Translate.DataBase.*;
 
 import java.util.ArrayList;
 
@@ -17,133 +15,136 @@ public class EncryptMethod {
 
         }
 
-        public void encryptmethod(char caracter) {
+        public void encryptmethod(String caracter) {
 
             StringBuilder sb = new StringBuilder();
             WordToMorse wm = new WordToMorse();
             NumberToMorse nm = new NumberToMorse();
             SymbolsToMorse sm = new SymbolsToMorse();
+            SpecialCharacterToMorse scm = new SpecialCharacterToMorse();
+            ControlSigns cs = new ControlSigns();
 
             switch (caracter){
-                case ' ':
+                case " ":
                         sb.append(" / ");
                     break;
-                case 'a':
+
+                case "a":
                         sb.append(wm.getA());
                     break;
-                case 'b':
+                case "b":
                         sb.append(wm.getB());
                     break;
-                case 'c':
+                case "c":
                         sb.append(wm.getC());
                     break;
-                case 'd':
+                case "d":
                         sb.append(wm.getD());
                     break;
-                case 'e':
+                case "e":
                         sb.append(wm.getE());
                     break;
-                case 'f':
+                case "f":
                         sb.append(wm.getF());
                     break;
-                case 'g':
+                case "g":
                         sb.append(wm.getG());
                     break;
-                case 'h':
+                case "h":
                         sb.append(wm.getH());
                     break;
-                case 'i':
+                case "i":
                         sb.append(wm.getI());
                     break;
-                case 'j':
+                case "j":
                         sb.append(wm.getJ());
                     break;
-                case 'k':
+                case "k":
                         sb.append(wm.getK());
                     break;
-                case 'l':
+                case "l":
                         sb.append(wm.getL());
                     break;
-                case 'm':
+                case "m":
                         sb.append(wm.getM());
                     break;
-                case 'n':
+                case "n":
                         sb.append(wm.getN());
                     break;
-                case 'o':
+                case "o":
                         sb.append(wm.getO());
                     break;
-                case 'p':
+                case "p":
                         sb.append(wm.getP());
                     break;
-                case 'q':
+                case "q":
                         sb.append(wm.getQ());
                     break;
-                case 'r':
+                case "r":
                         sb.append(wm.getR());
                     break;
-                case 's':
+                case "s":
                         sb.append(wm.getS());
                     break;
-                case 't':
+                case "t":
                         sb.append(wm.getT());
                     break;
-                case 'u':
+                case "u":
                         sb.append(wm.getU());
                     break;
 
-                case 'v':
+                case "v":
                         sb.append(wm.getV());
                     break;
-                case 'w':
+                case "w":
                         sb.append(wm.getW());
                     break;
-                case 'x':
+                case "x":
                         sb.append(wm.getX());
                     break;
-                case 'y':
+                case "y":
                         sb.append(wm.getY());
                     break;
-                case 'z':
+                case "z":
                         sb.append(wm.getZ());
                     break;
-                case '0':
+                case "0":
                         sb.append(nm.getZero());
                     break;
-                case '1':
+                case "1":
                         sb.append(nm.getOne());
                     break;
-                case '2':
+                case "2":
                         sb.append(nm.getTwo());
                     break;
-                case '3':
+                case "3":
                         sb.append(nm.getThree());
                     break;
-                case '4':
+                case "4":
                         sb.append(nm.getFour());
                     break;
-                case '5':
+                case "5":
                         sb.append(nm.getFive());
                     break;
-                case '6':
+                case "6":
                         sb.append(nm.getSix());
                     break;
-                case '7':
+                case "7":
                         sb.append(nm.getSeven());
                     break;
-                case '8':
+                case "8":
                         sb.append(nm.getEight());
                     break;
-                case '9':
+                case "9":
                         sb.append(nm.getNine());
                     break;
-                case '.':
+                case ".":
                         sb.append(sm.getPeriod());
                     break;
-                case ',':
+                case ",":
                         sb.append(sm.getComma());
                     break;
-                case '?':
+                case "?":
                         sb.append(sm.getQuestionMark());
                     break;
             }
