@@ -1,0 +1,9 @@
+eu preciso de uma lista q mescle o conteúdo e adicione em outra lista
+
+lista1 [ 1 ,  2 ,  3 ]
+lista2 [ 123 , 456 ]
+
+usar sb para adicionar coisas a string, e depois ao finalizar limpar a string
+depois q for detectado um espaço, adicionar um / começar a próxima frase
+
+implementar isso para letras, números e símbolos
